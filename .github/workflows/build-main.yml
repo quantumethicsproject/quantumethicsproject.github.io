@@ -16,21 +16,8 @@ jobs:
             - name: "Checkout source code"
               uses: actions/checkout@v2
 
-            # Cache node_modules to speed up the process
-            - name: "Restore node_modules cache"
-              id: cache-yarn
-              uses: actions/cache@v1
-              with:
-                  path: node_modules
-                  key: yarn-${{ hashFiles('**/yarn.lock') }}
-                  restore-keys: |
-                      yarn-${{ env.cache-name }}-
-                      yarn-
-
-            # Install npm dependencies for Prettier and Jest
             - name: "Install npm dependencies"
-              if: steps.cache-yarn.outputs.cache-hit != 'true'
-              run: yarn install
+              run: npm install
 
             # # Prettier formatting
             # - name: "Prettier"
@@ -42,7 +29,7 @@ jobs:
 
             # Build
             - name: "Build"
-              run: URL=https://test.build.url yarn build
+              run: npm build
             
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3

@@ -1,74 +1,74 @@
-# eleventy-chirpy-blog-template
+# Neat Starter
 
-[![Github Workflow](<https://github.com/muenzpraeger/eleventy-chirpy-blog-template/workflows/Blog%20build%20(main)/badge.svg?branch=main>)](https://github.com/muenzpraeger/eleventy-chirpy-blog-template/actions?query=workflow%3A%22Blog+build+%28main%29%22) [![Netlify Status](https://api.netlify.com/api/v1/badges/ceb123c7-d071-495e-b9a7-51d82b38c8a0/deploy-status)](https://app.netlify.com/sites/eleventy-chirpy-blog-template/deploys)
+Starter Template for **N**etlify CMS, **E**leventy, **A**lpine JS & **T**ailwind CSS
 
-[11ty](https://www.11ty.dev/) version of the popular [Chirpy Jekyll](https://github.com/cotes2020/jekyll-theme-chirpy) blog theme. Also powers [my personal blog](https://blog.winkelmeyer.com). I liked the UX a lot, but not the tech stack, hence I re-built it for myself. Sharing here with everybody, in case you like the same.
+## Live Demo
 
-You can check out the live version on <https://eleventy-chirpy-blog-template.netlify.app>.
+[https://neat-starter.netlify.app/](https://neat-starter.netlify.app/)
 
-If you want to deploy, there's a button for it: [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/muenzpraeger/eleventy-chirpy-blog-template)
+### Technologies used:
 
-## Features
+- [Netlify CMS](https://www.netlifycms.org/)
+- [Eleventy](https://www.11ty.dev/)
+- [Alpine.js](https://github.com/alpinejs/alpine)
+- [Tailwind CSS](https://tailwindcss.com/)
 
--   💯 on Lighthouse
--   🔆 and 🌛 mode
--   🎯 SEO and OpenGraph optimized
--   🌄 Responsive images optimization
--   👀 Accessible
--   🛠 JavaScript and CSS build optimization
--   👨‍💻 Prism-based syntax highlighting
--   📚 RSS (yup, still a thing), sitemap.xml, and JSON-LD
--   🔍 [Algolia Search](https://github.com/algolia/algoliasearch-netlify) enabled
--   and more
+| ![image](https://user-images.githubusercontent.com/1884712/93762662-a62e4700-fc2d-11ea-9b2c-fda9f503402b.png) |
+| ------------------------------------------------------------------------------------------------------------- |
 
-Opinionated setup with [Prettier](https://prettier.io/), [ESlint](https://eslint.org/), [markdownlint](https://github.com/DavidAnson/markdownlint) and others. UX build with [Nunjucks](https://mozilla.github.io/nunjucks/templating.html) and [TailwindCSS](https://tailwindcss.com/docs). JavaScript bundled with [Rollup](https://rollupjs.org/).
 
-## Configuration
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/surjithctly/neat-starter&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
 
-All blog configuration is handled via [`siteconfig.js`](./content/_data/siteconfig.js). Everything is inline documented.
+## Getting Started
 
-## Deployment
+Detailed instructions are available in my blog. [Check it out](https://blog.surjithctly.in/neat-stack-create-a-static-website-with-netlify-cms-eleventy-alpinejs-and-tailwindcss)
 
-All build processes rely on how `NODE_ENV` is set. For production builds, which then also means minified CSS and JS you've to set the value to `production`. I mention this explicitly as this is for some vendors not the default.
+### 1\. Clone this Repository
 
-If you want to speed up your build times a bit you can add the generated images to your git repo. The `.gitignore` already contains a commented section for that.
-
-## Local Development
-
-### Before you install dependencies
-
-This repo uses [Volta](https://volta.sh/). Get it, and it'll make your node life so much easier.
-
-### Instructions
-
-Clone this repository.
-
-```zsh
-git clone https://github.com/muenzpraeger/eleventy-chirpy-blog-template
+```
+git clone https://github.com/surjithctly/neat-starter.git
 ```
 
-Change into the cloned directory.
+### 2\. Navigate to the directory
 
-```zsh
-cd eleventy-chirpy-blog-template
+```
+cd neat-starter
 ```
 
-Install dependencies. Note, if you prefer `npm` over `yarn` make sure to first remove the `yarn.lock` file, and then run `npm install`.
+### 3\. Install dependencies
 
-```zsh
-yarn install
+```
+npm install
 ```
 
-Start the local development process.
+### 4\. Build the project to generate the first CSS
 
-```zsh
-yarn dev
+This step is only required the very first time.
+
+```
+npm run build
 ```
 
-Open the page, usually on <http://localhost:8080>, and dig around!
+### 5\. Run Eleventy
 
-## Credits
+```
+npm run start
+```
 
-The UX of this template is based on the popular Chirpy template, just with a different tech stack. If you prefer to run Jekyll and Bootstrap, checkout [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) here. It's great.
+## Author
 
-Also big thanks to the the authors of the [11ty High Performance Blog](https://github.com/google/eleventy-high-performance-blog).
+Surjith S M ( [@surjithctly](https://surjithctly.in/) )
+
+
+
+a. Education - Course/workshop materials
+Display past courses and workshops, maybe when the project is more mature users could request a workshop or a speaker or get support in adapting our materials into a course for their own academic context
+
+         b. Policy and Ethics Research
+         c. Career and Research Opportunities for people from underrepresented backgrounds
+
+a) landing page with general info and links to three components
+
+b,c,d) three components as outlined above and
+
+e) a contact us tab

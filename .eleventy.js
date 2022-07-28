@@ -1,166 +1,64 @@
-const { format, formatISO, getYear } = require("date-fns");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginToc = require("eleventy-plugin-toc");
-const { MD5 } = require("crypto-js");
-const { URL } = require("url");
-const { readFileSync } = require("fs");
-const siteconfig = require("./content/_data/siteconfig.js");
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
+const yaml = require("js-yaml");
+const { DateTime } = require("luxon");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
-    // Set Markdown library
-    eleventyConfig.setLibrary(
-        "md",
-        markdownIt({
-            html: true,
-            xhtmlOut: true,
-            linkify: true,
-            typographer: true
-        }).use(markdownItAnchor)
+  // Disable automatic use of your .gitignore
+  eleventyConfig.setUseGitIgnore(false);
+
+  // Merge data instead of overriding
+  eleventyConfig.setDataDeepMerge(true);
+
+  // human readable date
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+      "dd LLL yyyy"
     );
+  });
 
-    // Define passthrough for assets
-    eleventyConfig.addPassthroughCopy("assets");
+  // Syntax Highlighting for Code blocks
+  eleventyConfig.addPlugin(syntaxHighlight);
 
-    // Add watch target for JS files (needed for JS bundling in dev mode)
-    eleventyConfig.addWatchTarget("./assets/js/");
-    // And to make this work we've to disable the .gitignore usage of eleventy.
-    eleventyConfig.setUseGitIgnore(false);
+  // To Support .yaml Extension in _data
+  // You may remove this if you can use JSON
+  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
-    // Add 3rd party plugins
-    eleventyConfig.addPlugin(pluginRss);
-    eleventyConfig.addPlugin(pluginToc);
+  // Copy Static Files to /_Site
+  eleventyConfig.addPassthroughCopy({
+    "./src/admin/config.yml": "./admin/config.yml",
+    "./node_modules/alpinejs/dist/cdn.min.js": "./static/js/alpine.js",
+    "./node_modules/prismjs/themes/prism-tomorrow.css":
+      "./static/css/prism-tomorrow.css",
+  });
 
-    // Define 11ty template formats
-    eleventyConfig.setTemplateFormats([
-        "njk",
-        "md",
-        "svg",
-        "jpg",
-        "css",
-        "png"
-    ]);
+  // Copy Image Folder to /_site
+  eleventyConfig.addPassthroughCopy("./src/static/img");
 
-    // Generate excerpt from first paragraph
-    eleventyConfig.addShortcode("excerpt", (article) =>
-        extractExcerpt(article)
-    );
+  // Copy favicon to route of /_site
+  eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
-    // Set absolute url
-    eleventyConfig.addNunjucksFilter("absoluteUrl", (path) => {
-        return new URL(path, siteconfig.url).toString();
-    });
-
-    // Extract reading time
-    eleventyConfig.addNunjucksFilter("readingTime", (wordcount) => {
-        let readingTime = Math.ceil(wordcount / 220);
-        if (readingTime === 1) {
-            return readingTime + " minute";
-        }
-        return readingTime + " minutes";
-    });
-
-    // Extract word count
-    eleventyConfig.addNunjucksFilter("formatWords", (wordcount) => {
-        return wordcount.toLocaleString("en");
-    });
-
-    // Returns CSS class for home page link
-    eleventyConfig.addNunjucksFilter("isHomeLink", function (url, pattern) {
-        return (pattern === "/" && url === "/") ||
-            (pattern === "/" && url.startsWith("/posts"))
-            ? "active"
-            : "";
-    });
-
-    // Returns CSS class for active page link
-    eleventyConfig.addNunjucksFilter("isActiveLink", function (url, pattern) {
-        return url.length > 1 && url.startsWith(pattern) ? "active" : "";
-    });
-
-    // Format dates for sitemap
-    eleventyConfig.addNunjucksFilter("sitemapdate", function (date) {
-        return format(date, "yyyy-MM-dd");
-    });
-
-    // Format dates for JSON-LD
-    eleventyConfig.addNunjucksFilter("isodate", function (date) {
-        return formatISO(date);
-    });
-
-    // Extracts the year from a post
-    eleventyConfig.addNunjucksFilter("year", function (post) {
-        if (post && post.date) {
-            return getYear(post.date);
-        }
-        return "n/a";
-    });
-
-    // Extracts the day of a date
-    eleventyConfig.addNunjucksFilter("day", function (date) {
-        return format(date, "dd");
-    });
-
-    // Extracts the month of a date
-    eleventyConfig.addNunjucksFilter("month", function (date) {
-        return format(date, "MMM");
-    });
-
-    // Extracts readable date of a date
-    eleventyConfig.addNunjucksFilter("readableDate", function (date) {
-        return format(date, "MMM dd, yyyy");
-    });
-
-    // Add custom hash for cache busting
-    const hashes = new Map();
-    eleventyConfig.addNunjucksFilter("addHash", function (absolutePath) {
-        const cached = hashes.get(absolutePath);
-        if (cached) {
-            return `${absolutePath}?hash=${cached}`;
-        }
-        const fileContent = readFileSync(`${process.cwd()}${absolutePath}`, {
-            encoding: "utf-8"
-        }).toString();
-        const hash = MD5(fileContent.toString());
-        hashes.set(absolutePath, hash);
-        return `${absolutePath}?hash=${hash}`;
-    });
-
-    // Create custom collection for getting the newest 5 updates
-    eleventyConfig.addCollection("recents", function (collectionApi) {
-        return collectionApi.getAllSorted().reverse().slice(0, 5);
-    });
-
-    // Plugin for setting _blank and rel=noopener on external links in markdown content
-    eleventyConfig.addPlugin(require("./_11ty/external-links.js"));
-
-    // Plugin for transforming images
-    eleventyConfig.addPlugin(require("./_11ty/srcset.js"));
-
-    // Plugin for minifying HTML
-    eleventyConfig.addPlugin(require("./_11ty/html-minify.js"));
-
-    return {
-        dir: {
-            // Consolidating everything below the `content` folder
-            input: "content"
-        }
-    };
-};
-
-// Taken from here => https://keepinguptodate.com/pages/2019/06/creating-blog-with-eleventy/
-function extractExcerpt(article) {
-    if (!Object.prototype.hasOwnProperty.call(article, "templateContent")) {
-        console.warn(
-            'Failed to extract excerpt: Document has no property "templateContent".'
-        );
-        return null;
+  // Minify HTML
+  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+    if (outputPath.endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+      });
+      return minified;
     }
 
-    const content = article.templateContent;
+    return content;
+  });
 
-    const excerpt = content.slice(0, content.indexOf("\n"));
-
-    return excerpt;
-}
+  // Let Eleventy transform HTML files as nunjucks
+  // So that we can use .html instead of .njk
+  return {
+    dir: {
+      input: "src",
+    },
+    htmlTemplateEngine: "njk",
+  };
+};

@@ -1,0 +1,14 @@
+---
+links:
+  - title: Learn
+    url: "/education"
+    desc: Open source courses and workshops on quantum ethics.
+  - title: Research
+    url: "/research"
+    desc: Policy and Ethics Research
+  - title: Find Opportunities
+    url: "/opportunities"
+    desc: Career and Research Opportunities for people from underrepresented backgrounds.
+  - title: Get involved
+    url: "mailto:joan@quantumethicsproject.org"
+    desc: Get involved and help make the project better.

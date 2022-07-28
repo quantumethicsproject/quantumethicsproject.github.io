@@ -1,0 +1,10 @@
+---
+items:
+  - text: EDUCATION
+    url: "/education"
+  - text: RESEARCH
+    url: "/research"
+  - text: OPPORTUNITIES
+    url: "/opportunities"
+  # - text: Blog
+  #   url: "/blog"
