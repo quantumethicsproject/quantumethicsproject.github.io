@@ -6,5 +6,7 @@ items:
     url: "/research"
   - text: OPPORTUNITIES
     url: "/opportunities"
+  - text: GET INVOLVED
+    url: "/get-involved"
   # - text: Blog
   #   url: "/blog"

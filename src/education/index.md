@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: page
+title: Education
+description: How to get involved with Quantum Ethics Project
 ---
 
 ## Policies

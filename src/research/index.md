@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: page
+title: Research
+description: How to get involved with Quantum Ethics Project
 ---
 
 ## Policies

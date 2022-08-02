@@ -4,20 +4,19 @@ title: Quantum Ethics Project
 path: home
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <!-- <h1>
-    Welcome to the<br>
-   <strong class="bg-clip-text text-transparent bg-gradient-to-r from-brand-dark to-black">
-      {{title}}
-    </strong>
-  </h1> -->
-  <p></p>
-  <img src="static\img\logo.jpg" alt="Quantum Ethics Project" width="35%" height="35%" padding="25%">
-  <!-- <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-slate-500 text-white-800 p-1">/index.njk</code>
-  </p> -->
+<img src="static\img\logo.jpg" alt="Quantum Ethics Project" class="flex flex-col justify-center items-center"/>
 
-  {% include "./_includes/partials/content.html" %}
+<div class="w-full max-w-2xl grid grid-cols-1 lg:grid-cols-2 gap-4 my-8 px-4 lg:mx-0">
+    {% if quicklinks.links %}
+
+        {% for item in quicklinks.links %}
+            <a href="{{item.url}}" target="_blank" class="p-5 border rounded border-gray-200 hover:bg-brand-dark-500">
+                <h3>{{item.title}}
+                    →</h3>
+                <p>{{item.desc}}</p>
+            </a>
+        {% endfor %}
+
+    {% endif %}
+
 </div>
