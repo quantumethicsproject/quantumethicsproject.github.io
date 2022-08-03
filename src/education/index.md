@@ -8,7 +8,7 @@ description: Open Source Courses and Seminars with the Quantum Ethics Project
 hahahahahah
 ## (Bold) Coming soon
 
-<img src="static\img\fiatLux.jpg" alt="Quantum Ethics Project" class="flex flex-col justify-center items-center"/>
+<img src="static\img\fiatLux.jpg" alt="Fiat Lux Seminar" class="flex flex-col justify-center items-center"/>
 
 - [paper 1](default.com)
 - [paper 2](default.com)
