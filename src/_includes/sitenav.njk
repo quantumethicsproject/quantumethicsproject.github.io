@@ -1,0 +1,23 @@
+{% set currentUrl = page.url %}
+
+<nav aria-labelledby="tdbc-siteid" class="tdbc-sitenav">
+  <div class="tdbc-sitenav__container">
+    <a id="tdbc-siteid" href="/"
+    {% if currentUrl === '/' %}aria-current="page"{% endif %}>
+    {# <img src="/img/QEP_Logo.svg" alt="QEP Logo" />  #}
+    <img style="height: 2em;" src="/img/icon.png" alt="QEP Logo" /> 
+    </a>
+    <ul role="list" class="tdbc-sitenav__navlist tdbc-list-unstyled">
+      {% for link in collections.pages %}
+      <li>
+        <a
+          {% if currentUrl === link.url %}aria-current="page"{% endif %}
+          href="{{ link.url }}">
+            {{ link.data.title }}
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+</nav>
+
+    {# <svg src="img/icon.svg" alt="QEP Logo" > #}

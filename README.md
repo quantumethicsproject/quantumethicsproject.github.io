@@ -1,74 +1,50 @@
-# Neat Starter
+# 11ty Netlify Jumpstart
 
-Starter Template for **N**etlify CMS, **E**leventy, **A**lpine JS & **T**ailwind CSS
+> Created by Stephanie Eckles ([@5t3ph](https://twitter.com/5t3ph))
 
-## Live Demo
+Visit [11ty-netlify-jumpstart.netlify.app](https://11ty-netlify-jumpstart.netlify.app/) for all the feature details - or go ahead and [generate a new repo from the template](https://github.com/5t3ph/11ty-netlify-jumpstart/generate) to view the information locally.
 
-[https://neat-starter.netlify.app/](https://neat-starter.netlify.app/)
+## Quick Start
 
-### Technologies used:
+1. [Generate a repo from this template](https://github.com/5t3ph/11ty-netlify-jumpstart/generate)
+   which will copy this project into your own new repo _if you are currently signed in to GitHub_. Alternatively, [visit the repo directly](https://github.com/5t3ph/11ty-netlify-jumpstart).
 
-- [Netlify CMS](https://www.netlifycms.org/)
-- [Eleventy](https://www.11ty.dev/)
-- [Alpine.js](https://github.com/alpinejs/alpine)
-- [Tailwind CSS](https://tailwindcss.com/)
+1. Once cloned, run `npm install` to install 11ty and other dependencies. Then run `npm start` to run both 11ty and sass in watch
+   mode. Use `npm run build` to run a production version, which will also generate social share
+   preview images.
 
-| ![image](https://user-images.githubusercontent.com/1884712/93762662-a62e4700-fc2d-11ea-9b2c-fda9f503402b.png) |
-| ------------------------------------------------------------------------------------------------------------- |
+1. Open `src/_data/meta.js` and adjust the values to your details.
 
+1. Review the [styling documentation](https://5t3ph.github.io/html-sass-jumpstart/) for the included minimal
+   Sass framework, particularly the theme variables, to quickly customize the starter.
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/surjithctly/neat-starter&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
+1. Edit `src/index.njk` to change the home page - including changing the template type if desired -
+   and then create content within `_pages` using any templating format you prefer to add content.
 
-## Getting Started
+1. Check out the [About page](https://11ty-netlify-jumpstart.netlify.app/about/) for expanded details on included features of this starter.
 
-Detailed instructions are available in my blog. [Check it out](https://blog.surjithctly.in/neat-stack-create-a-static-website-with-netlify-cms-eleventy-alpinejs-and-tailwindcss)
+1. Review the [11ty documentation](https://11ty.dev) to more deeply apply customizations, including
+   adding custom data sources and reviewing what template languages are available.
 
-### 1\. Clone this Repository
+### Is Netlify hosting required?
 
-```
-git clone https://github.com/surjithctly/neat-starter.git
-```
+It's not required, but highly recommended, and is also how the build process is setup to run
+against.
 
-### 2\. Navigate to the directory
+## Development Scripts
 
-```
-cd neat-starter
-```
+**`npm start`**
 
-### 3\. Install dependencies
+> Run 11ty with hot reload at localhost:8080
 
-```
-npm install
-```
+**`npm run build`**
 
-### 4\. Build the project to generate the first CSS
+> Production build includes minified, autoprefixed CSS and social preview image generation
 
-This step is only required the very first time.
+Use this as the "Publish command" if needed by hosting such as Netlify.
 
-```
-npm run build
-```
+## Feedback welcome!
 
-### 5\. Run Eleventy
+You can [file it as an issue](https://github.com/5t3ph/11ty-netlify-jumpstart/issues).
 
-```
-npm run start
-```
-
-## Author
-
-Surjith S M ( [@surjithctly](https://surjithctly.in/) )
-
-
-
-a. Education - Course/workshop materials
-Display past courses and workshops, maybe when the project is more mature users could request a workshop or a speaker or get support in adapting our materials into a course for their own academic context
-
-         b. Policy and Ethics Research
-         c. Career and Research Opportunities for people from underrepresented backgrounds
-
-a) landing page with general info and links to three components
-
-b,c,d) three components as outlined above and
-
-e) a contact us tab
+[![Buy me a coffee](https://cdn.buymeacoffee.com/buttons/default-violet.png)](https://www.buymeacoffee.com/moderncss)

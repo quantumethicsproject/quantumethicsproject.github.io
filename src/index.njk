@@ -1,0 +1,61 @@
+---
+layout: base.njk
+templateEngineOverride: md, njk
+---
+
+{# A tiny extra style for the starter home page, intended to be removed as you customize to fit your own content! #}
+
+<style>
+  {# .logo {
+    width: 30vmax;
+    height: 30vmax;
+    margin: 0 auto 2rem;
+  } #}
+
+  {# .logo svg {
+    width: 200%;
+    height: 200%;
+  } #}
+
+  .tdbc-hero {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  #quickstart + ol li:first-child,
+  #quickstart + ol li:first-child p {
+    font-size: 1.5rem;
+  }
+</style>
+<header class="tdbc-hero">
+  <div class="tdbc-container">
+    <h1 class="tdbc-ink--primary tdbc-mb-none">
+    <div class="tdbc-mx-auto" style="width: 50%; align: center;">
+      <img src="img/QEP_Logo.svg" class="logo" alt="QEP Logo" />
+    </div>
+    </h1>
+    <h2 class="tdbc-lead tdbc-content-maxlength tdbc-ink--gray tdbc-mt-md tdbc-mx-auto">
+      {{ meta.siteDescription }}
+    </h2>
+  </div>
+</header>
+<main class="tdbc-container">
+  <div class="tdbc-section">
+    <ul class="tdbc-column-container">
+      {%- for page in collections.pages -%}
+      <li class="tdbc-card">
+        <div class="tdbc-card__content">
+          <a href="{{ page.url }}" class="tdbc-card__title">{{ page.data.title }}</a>
+          <p>{{ page.data.description }}</p>
+        </div>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  <style>
+    
+  </style>
+
+{{ content | safe }}
+
+</main>
