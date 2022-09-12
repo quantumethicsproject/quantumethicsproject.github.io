@@ -1,6 +1,7 @@
 // 11ty Plugins
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const socialImages = require("@11tyrocks/eleventy-plugin-social-images");
 
 // Helper packages
 const slugify = require("slugify");
