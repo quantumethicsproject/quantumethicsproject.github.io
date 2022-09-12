@@ -9,7 +9,8 @@
 
 // stylelint-disable selector-max-type
 .tdbc-sitenav {
-  background-color: tdbc-color("primary");
+  // background-color: tdbc-color("primary");
+  background-color: tdbc-color("gray");
 
   &__container,
   &__navlist {
