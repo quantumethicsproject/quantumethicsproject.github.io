@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Quantum Ethics Project</title>
+	<subtitle>Quantum Ethics Project is a research project that aims to understand the quantum mechanics of quantum ethics.</subtitle>
+	
+	<link href="http://localhost:8080/feed/" rel="self"/>
+	<link href="http://localhost:8080"/>
+	<updated>2022-09-12T15:31:31Z</updated>
+	<id>http://localhost:8080</id>
+	<author>
+		<name>Quantum Ethics Project</name>
+	</author>
+	
+	<entry>
+		<title>Education</title>
+		<link href="http://localhost:8080/education/"/>
+		<updated>2022-09-12T15:31:31Z</updated>
+		<id>http://localhost:8080/education/</id>
+		<content type="html">&lt;h2 id=&quot;coming-soon-fiat-lux-seminar-hosted-by-ucla&quot; tabindex=&quot;-1&quot;&gt;Coming soon: Fiat Lux Seminar, Hosted by UCLA&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/education/#coming-soon-fiat-lux-seminar-hosted-by-ucla&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;img src=&quot;http://localhost:8080/img/fiatLux.jpg&quot; alt=&quot;Fiat Lux Seminar&quot; /&gt;
+&lt;p&gt;Join the Quantum Ethics Project as we develop first-of-its-kind Coursework on Quantum Ethics. We are currently organizing a 10 lecture series on Quantum Ethics, to be delivered January 2023. ALL ARE WELCOME! - &lt;a href=&quot;https://www.uei.ucla.edu/academic-programs/fiat-lux/&quot;&gt;Sign up Link&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We are actively looking for colaborators - &lt;a href=&quot;http://localhost:8080/education/default.com&quot;&gt;Click Here to Get Involved&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/education/default.com&quot;&gt;paper 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/education/default.com&quot;&gt;paper 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/education/default.com&quot;&gt;paper 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Get Involved</title>
+		<link href="http://localhost:8080/get-involved/"/>
+		<updated>2022-09-12T15:31:31Z</updated>
+		<id>http://localhost:8080/get-involved/</id>
+		<content type="html">&lt;h2 id=&quot;policies&quot; tabindex=&quot;-1&quot;&gt;Policies&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/get-involved/#policies&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;academic-research&quot; tabindex=&quot;-1&quot;&gt;Academic research&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/get-involved/#academic-research&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/get-involved/default.com&quot;&gt;paper 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/get-involved/default.com&quot;&gt;paper 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/get-involved/default.com&quot;&gt;paper 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Opportunities</title>
+		<link href="http://localhost:8080/opportunities/"/>
+		<updated>2022-09-12T15:31:31Z</updated>
+		<id>http://localhost:8080/opportunities/</id>
+		<content type="html">&lt;h2 id=&quot;are-you-interested-in-getting-involved-in-real-quantum-research-and-furthering-your-career-in-quantum-technolody-are-you-a-research-mentor-with-a-project-in-need-of-a-student-research-assistant&quot; tabindex=&quot;-1&quot;&gt;Are you interested in getting involved in real quantum research and furthering your career in quantum technolody? Are you a research mentor with a project in need of a student research assistant?&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/opportunities/#are-you-interested-in-getting-involved-in-real-quantum-research-and-furthering-your-career-in-quantum-technolody-are-you-a-research-mentor-with-a-project-in-need-of-a-student-research-assistant&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;the-quantum-ethics-project-wants-to-connect-you-and-foster-opportunities-for-students-with-diverse-backgrounds-the-quantum-ethics-project-recognizes-the-value-of-investing-in-the-future-and-ensuring-the-quantum-community-looks-like-the-world-we-are-hoping-to-benefit-with-quantum-tech&quot; tabindex=&quot;-1&quot;&gt;The Quantum Ethics Project wants to connect you and foster opportunities for students with diverse backgrounds. The Quantum Ethics Project recognizes the value of investing in the future and ensuring the quantum community looks like the world we are hoping to benefit with quantum tech.&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/opportunities/#the-quantum-ethics-project-wants-to-connect-you-and-foster-opportunities-for-students-with-diverse-backgrounds-the-quantum-ethics-project-recognizes-the-value-of-investing-in-the-future-and-ensuring-the-quantum-community-looks-like-the-world-we-are-hoping-to-benefit-with-quantum-tech&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;we-are-piloting-this-program-with-our-first-cohort-of-6-diverse-quantum-novices-spanning-4-continents-is-now-actively-engaged-their-first-research-project-click-here-for-the-extended-abstract-supported-by-the-quantum-ethics-project&quot; tabindex=&quot;-1&quot;&gt;We are piloting this program with our first cohort of 6 diverse quantum novices spanning 4 continents is now actively engaged their first research project - &lt;a href=&quot;http://localhost:8080/opportunities/%5Bdefault.com%5D(https://docs.google.com/document/d/1CyrzJ3yxJQgD_HWeTGtjnJG-r1yGwV4HQjBlPBIzDnI/edit)&quot;&gt;Click Here for the Extended Abstract&lt;/a&gt; supported by the Quantum Ethics Project.&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/opportunities/#we-are-piloting-this-program-with-our-first-cohort-of-6-diverse-quantum-novices-spanning-4-continents-is-now-actively-engaged-their-first-research-project-click-here-for-the-extended-abstract-supported-by-the-quantum-ethics-project&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;img src=&quot;http://localhost:8080/img/Quantum_Research_Group_First_Meeting.PNG&quot; alt=&quot;2022-2023 Research Group&quot; class=&quot;flex flex-col justify-center items-center&quot; /&gt;
+&lt;h2 id=&quot;research-paper-coming-soon&quot; tabindex=&quot;-1&quot;&gt;Research Paper Coming soon:&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/opportunities/#research-paper-coming-soon&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/opportunities/default.com&quot;&gt;Assessing the Trainability of all Variational Quantum Algorithms at Scale&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Research</title>
+		<link href="http://localhost:8080/research/"/>
+		<updated>2022-09-12T15:31:31Z</updated>
+		<id>http://localhost:8080/research/</id>
+		<content type="html">&lt;h2 id=&quot;policies&quot; tabindex=&quot;-1&quot;&gt;Policies&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/research/#policies&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;academic-research&quot; tabindex=&quot;-1&quot;&gt;Academic research&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/research/#academic-research&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/research/default.com&quot;&gt;paper 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/research/default.com&quot;&gt;paper 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/research/default.com&quot;&gt;paper 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+</feed>
