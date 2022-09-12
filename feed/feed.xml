@@ -5,7 +5,7 @@
 	
 	<link href="http://localhost:8080/feed/" rel="self"/>
 	<link href="http://localhost:8080"/>
-	<updated>2022-09-12T15:31:31Z</updated>
+	<updated>2022-09-12T15:44:44Z</updated>
 	<id>http://localhost:8080</id>
 	<author>
 		<name>Quantum Ethics Project</name>
@@ -14,7 +14,7 @@
 	<entry>
 		<title>Education</title>
 		<link href="http://localhost:8080/education/"/>
-		<updated>2022-09-12T15:31:31Z</updated>
+		<updated>2022-09-12T15:44:44Z</updated>
 		<id>http://localhost:8080/education/</id>
 		<content type="html">&lt;h2 id=&quot;coming-soon-fiat-lux-seminar-hosted-by-ucla&quot; tabindex=&quot;-1&quot;&gt;Coming soon: Fiat Lux Seminar, Hosted by UCLA&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/education/#coming-soon-fiat-lux-seminar-hosted-by-ucla&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;img src=&quot;http://localhost:8080/img/fiatLux.jpg&quot; alt=&quot;Fiat Lux Seminar&quot; /&gt;
@@ -33,7 +33,7 @@
 	<entry>
 		<title>Get Involved</title>
 		<link href="http://localhost:8080/get-involved/"/>
-		<updated>2022-09-12T15:31:31Z</updated>
+		<updated>2022-09-12T15:44:44Z</updated>
 		<id>http://localhost:8080/get-involved/</id>
 		<content type="html">&lt;h2 id=&quot;policies&quot; tabindex=&quot;-1&quot;&gt;Policies&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/get-involved/#policies&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&quot;academic-research&quot; tabindex=&quot;-1&quot;&gt;Academic research&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/get-involved/#academic-research&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -48,7 +48,7 @@
 	<entry>
 		<title>Opportunities</title>
 		<link href="http://localhost:8080/opportunities/"/>
-		<updated>2022-09-12T15:31:31Z</updated>
+		<updated>2022-09-12T15:44:44Z</updated>
 		<id>http://localhost:8080/opportunities/</id>
 		<content type="html">&lt;h2 id=&quot;are-you-interested-in-getting-involved-in-real-quantum-research-and-furthering-your-career-in-quantum-technolody-are-you-a-research-mentor-with-a-project-in-need-of-a-student-research-assistant&quot; tabindex=&quot;-1&quot;&gt;Are you interested in getting involved in real quantum research and furthering your career in quantum technolody? Are you a research mentor with a project in need of a student research assistant?&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/opportunities/#are-you-interested-in-getting-involved-in-real-quantum-research-and-furthering-your-career-in-quantum-technolody-are-you-a-research-mentor-with-a-project-in-need-of-a-student-research-assistant&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&quot;the-quantum-ethics-project-wants-to-connect-you-and-foster-opportunities-for-students-with-diverse-backgrounds-the-quantum-ethics-project-recognizes-the-value-of-investing-in-the-future-and-ensuring-the-quantum-community-looks-like-the-world-we-are-hoping-to-benefit-with-quantum-tech&quot; tabindex=&quot;-1&quot;&gt;The Quantum Ethics Project wants to connect you and foster opportunities for students with diverse backgrounds. The Quantum Ethics Project recognizes the value of investing in the future and ensuring the quantum community looks like the world we are hoping to benefit with quantum tech.&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/opportunities/#the-quantum-ethics-project-wants-to-connect-you-and-foster-opportunities-for-students-with-diverse-backgrounds-the-quantum-ethics-project-recognizes-the-value-of-investing-in-the-future-and-ensuring-the-quantum-community-looks-like-the-world-we-are-hoping-to-benefit-with-quantum-tech&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -64,7 +64,7 @@
 	<entry>
 		<title>Research</title>
 		<link href="http://localhost:8080/research/"/>
-		<updated>2022-09-12T15:31:31Z</updated>
+		<updated>2022-09-12T15:44:44Z</updated>
 		<id>http://localhost:8080/research/</id>
 		<content type="html">&lt;h2 id=&quot;policies&quot; tabindex=&quot;-1&quot;&gt;Policies&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/research/#policies&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&quot;academic-research&quot; tabindex=&quot;-1&quot;&gt;Academic research&lt;a class=&quot;tdbc-anchor&quot; href=&quot;http://localhost:8080/research/#academic-research&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
